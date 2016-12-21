@@ -1,3 +1,38 @@
+/*Theme Styles*/
+
+
+/*Footer*/
+
+footer .site-promo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+footer .site-map {
+    text-align: left;
+}
+
+footer .site-map .row {
+    margin-bottom: 8px;
+}
+
+footer .site-map a {
+    font-size: 0.75em;
+}
+
+footer .site-map a,
+footer .site-map a:visited,
+footer .site-map a:active {
+    color: #263546;
+    text-decoration: none;
+}
+
+footer .site-map a:hover {
+    color: #344a61;
+    text-decoration: none;
+}
+
+
 /*Bootstrap Overrides*/
 
 

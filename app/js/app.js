@@ -25,6 +25,25 @@
         ]
 
 
+        $scope.sampleCarouselContent = [{
+                contentTitle: 'Sample 1',
+                contentCaption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat magna. Sed malesuada vehicula luctus. Aenean eleifend pharetra molestie. Suspendisse potenti. Suspendisse potenti.',
+                contentImg: '',
+                contentUrl: '#'
+            }, {
+                contentTitle: 'Sample 2',
+                contentCaption: 'Vestibulum tincidunt nulla augue, eu commodo metus efficitur non. Quisque nec semper dolor. Aenean sit amet urna in leo finibus gravida vitae eget eros.',
+                contentImg: '',
+                contentUrl: '#'
+            }, {
+                contentTitle: 'Sample 3',
+                contentCaption: 'Quisque ornare metus augue, ac convallis urna feugiat ut. Mauris suscipit tellus a augue luctus, vitae porta nisl facilisis. Suspendisse iaculis dapibus erat, ac tempor nisl cursus eu.',
+                contentImg: '',
+                contentUrl: '#'
+            }
+        ];
+
+
     });
 
 })();
