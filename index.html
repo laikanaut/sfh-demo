@@ -10,6 +10,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src='app/js/app.js'></script>
@@ -33,14 +34,17 @@
 
     <!--Icons-->
     <!--TODO Remove the icon CDN and replace with actual dl-->
-    <script src="https://use.fontawesome.com/8127873294.js"></script>
+    <!--<script src="https://use.fontawesome.com/8127873294.js"></script>-->
+    <link rel="stylesheet" href="app/resources/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
 
 
 
 </head>
 
 <body ng-controller="sfhController">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -50,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Students For Haiti</a>
+                <a class="navbar-brand" href="#"><i class='sfh-logo fa fa-ravelry' aria-hidden="true"></i> <span class='sfh-name'>Students For Haiti</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,6 +109,31 @@
     <div class='sfh-content-body container'>
         <carousel config='sampleCarouselContent'></carousel>
 
+
+        <!--Sample Content... Need to work on the structure-->
+        <div id="testimonials-container" class='featured-section'>
+            <h3>
+                Together, we're improving lives. Ensuring the future. <br /> 
+                <span class='bolded'>And making history.</span>
+            </h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nulla diam, iaculis at dignissim imperdiet, posuere et lorem. Nam tempor lacus ut cursus ultricies. Nam fringilla sagittis augue, vel ullamcorper magna. Sed non turpis lobortis neque congue faucibus. Morbi bibendum turpis diam, at tempor augue tempor vel. Cras cursus nulla vitae metus mattis bibendum sed sit amet leo. Donec justo elit, rutrum quis facilisis vitae, scelerisque vel risus. Integer laoreet arcu in nulla pulvinar tristique. Phasellus dapibus nec ex sit amet suscipit. Maecenas et sapien mi. Suspendisse vulputate turpis sed elit semper ornare. Pellentesque nec venenatis lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eu lectus lacus. Phasellus maximus velit non nunc placerat tincidunt.
+            </p>
+        </div>
+
+        <div id="resources-container" class='featured-section'>
+            <h3>
+                It's time to multiply the impact of your organization. <br /> 
+                <span class='bolded'>Tools and Resources</span>
+            </h3>
+
+            <p>
+                Maecenas eget mauris quam. In eleifend lorem eget tristique feugiat. Sed interdum urna ligula, a mollis sem faucibus sed. Vivamus eget augue erat. Ut at molestie orci, quis pretium mi. Vivamus quis sollicitudin ipsum. Morbi at purus efficitur, vehicula orci volutpat, pharetra nunc. Nullam arcu risus, dignissim id felis et, fermentum blandit tellus. Nulla imperdiet, purus et imperdiet euismod, odio quam molestie risus, in volutpat tellus felis sit amet magna. Etiam diam sem, dignissim ut ullamcorper et, vestibulum et odio. Sed id arcu vitae ex ullamcorper porttitor. Praesent commodo erat sed quam mollis, vitae commodo velit tincidunt. Cras eget leo accumsan, sollicitudin sapien quis, congue urna. Vestibulum sed leo risus.
+            </p>
+        </div>
+
+
     </div>
 
     <footer>
@@ -120,7 +149,7 @@
                         <div class="col-xs-6">
                             <button class="btn btn-alert">Donate</button>
                         </div>
-                        <div class="col-xs-2" ng-repeat='sm in socialMediaDetails'>
+                        <div class="col-xs-2" class='social-media-links' ng-repeat='sm in socialMediaDetails'>
                             <sm-dot config='sm'></sm-dot>
                         </div>
                     </div>
