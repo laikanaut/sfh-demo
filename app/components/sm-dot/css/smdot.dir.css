@@ -1,0 +1,18 @@
+.sm-dot-container {
+    background-color: #466281;
+    border-radius: 50%;
+    color: #fafafa;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+
+.sm-dot-container {
+    color: #fafafa;
+    text-align: center;
+}
+
+.sm-dot-container i {
+    font-size: 1.5em;
+    margin-top: 7px;
+}

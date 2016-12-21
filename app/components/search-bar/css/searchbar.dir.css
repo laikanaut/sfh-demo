@@ -1,0 +1,35 @@
+.searchbar-container {
+    background-color: #ffffff;
+    border: 2px solid #344a61;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.search-bar-text-in {
+    border: none;
+    border-radius: 5px;
+    color: #344a61;
+    font-size: 1.2em;
+    height: 35px;
+    outline: 0;
+    padding-left: 3px;
+    width: 90%;
+}
+
+.search-bar-search {
+    background-color: transparent;
+    border: none;
+    bottom: 0;
+    color: #263546;
+    height: 35px;
+    outline: 0;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 35px;
+}
+
+.search-bar-search i {
+    font-size: 1.3em;
+}

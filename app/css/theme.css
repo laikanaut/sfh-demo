@@ -1,0 +1,23 @@
+/*Bootstrap Overrides*/
+
+
+/*Navbar*/
+
+.navbar-default {
+    color: #fafafa;
+    background-color: #263546;
+}
+
+.navbar-default .navbar-brand {
+    color: #fafafa;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #fafafa;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    background-color: #ffffff;
+}

@@ -6,10 +6,10 @@
             restrict: 'AE',
             replace: true,
             scope: {
-                ngClick: '&',
+                searchFunction: '&',
                 placeholder: '@'
             },
-            template: '<div><input class="search-bar-text-in" type="text" ng-model="searchTerms"><button class="search-bar-search" ng-click="ngClick" placeholder="{{placeholder}}"><i class="glyphicon glyphicon-search"></i></button</div>',
+            template: '<div class="searchbar-container"><input class="search-bar-text-in" type="text" ng-model="searchTerms"  placeholder="{{placeholder}}"><button class="search-bar-search" ng-click="searchFunction({terms : searchTerms})"><i class="fa fa-search" aria-hidden="true"></i></button</div>',
             link: function (scope, elem, attrs) {
 
             }

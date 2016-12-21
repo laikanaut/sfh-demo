@@ -20,12 +20,21 @@
     <!--Components-->
     <!--SearchBar-->
     <script src='app/components/search-bar/js/searchbar.dir.js'></script>
+    <link rel="stylesheet" href="app/components/search-bar/css/searchbar.dir.css">
+
+    <!--SMDot-->
+    <script src='app/components/sm-dot/js/smdot.dir.js'></script>
+    <link rel="stylesheet" href="app/components/sm-dot/css/smdot.dir.css">
+
+    <!--Icons-->
+    <!--TODO Remove the icon CDN and replace with actual dl-->
+    <script src="https://use.fontawesome.com/8127873294.js"></script>
 
 
 
 </head>
 
-<body>
+<body ng-controller="sfhController">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +51,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-right">
-                    <input type='text' placeholder='Search...' ng-click='testFxn()' search-bar>
+                    <input type='text' placeholder='Search...' search-function='testFunction(terms)' search-bar>
                 </form>
 
                 <ul class="nav navbar-nav">
@@ -88,8 +97,98 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div class='container'>
 
 
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 site-promo">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>Students For Haiti</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button class="btn btn-alert">Donate</button>
+                        </div>
+                        <div class="col-xs-2" ng-repeat='sm in socialMediaDetails'>
+                            <sm-dot config='sm'></sm-dot>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 site-map">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#">About Us</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">SFH History</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Development Principles</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Directors &amp; Staff</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#">News</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">FAQs</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Why Haiti</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Country Background</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#">Recent Challenges</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Facts &amp; Statistics</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Testimonials</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Further Reading</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#">Donors</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Additional Resources</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Resources for Orgs</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Resources for Students</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#">Resources on Haiti</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
