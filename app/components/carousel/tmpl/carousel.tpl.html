@@ -1,12 +1,13 @@
 <div class='carousel-container'>
     <div class='carousel-content-container'>
-        <a class='carousel-content' ng-repeat='item in config' ng-show='currentIndex==$index' ng-href='{{item.contentUrl}}'>
+        <a class='carousel-content' ng-repeat='item in config' ng-show='currentIndex==$index' ng-href='{{item.contentUrl}}' back-img='{{item.contentImg}}' ng-swipe-left='handleSwipe(1)' ng-swipe-right='handleSwipe(-1)'>
+            <div class='carousel-overlay'></div>
             <h2>{{item.contentTitle}}</h2>
-            <p>{{item.contentTitle}}</p>
+            <h3>{{item.contentCaption}}</h3>
 
         </a>
     </div>
-    <div class='carousel-controls'>
-        <div class='carousel-tab' ng-repeat='item in config' ng-class='{"carousel-current-tab" : currentIndex==$index}' ng-click='goToIndex($index)'></div>
+    <div class='carousel-controls '>
+        <div class='carousel-tab ' ng-repeat='item in config ' ng-class='{ "carousel-current-tab" : currentIndex==$index} ' ng-click='goToIndex($index) '></div>
     </div>
 </div>

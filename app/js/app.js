@@ -1,6 +1,6 @@
 (function () {
 
-    angular.module('sfhApp', []).controller('sfhController', function ($scope) {
+    angular.module('sfhApp', ['ngTouch']).controller('sfhController', function ($scope) { //'ngAnimate'
 
         $scope.testFunction = function (terms) {
 
@@ -26,19 +26,24 @@
 
 
         $scope.sampleCarouselContent = [{
-                contentTitle: 'Sample 1',
-                contentCaption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat magna. Sed malesuada vehicula luctus. Aenean eleifend pharetra molestie. Suspendisse potenti. Suspendisse potenti.',
-                contentImg: '',
+                contentTitle: 'Fundraise Effectively',
+                contentCaption: 'We have a database of vetted projects waiting for your support',
+                contentImg: 'app/resources/img/img1.jpg',
                 contentUrl: '#'
             }, {
-                contentTitle: 'Sample 2',
-                contentCaption: 'Vestibulum tincidunt nulla augue, eu commodo metus efficitur non. Quisque nec semper dolor. Aenean sit amet urna in leo finibus gravida vitae eget eros.',
-                contentImg: '',
+                contentTitle: 'Collaborate, Don\'t recreate',
+                contentCaption: 'Take your resources and skills further by supporting vetted projects',
+                contentImg: 'app/resources/img/img2.jpg',
                 contentUrl: '#'
             }, {
-                contentTitle: 'Sample 3',
-                contentCaption: 'Quisque ornare metus augue, ac convallis urna feugiat ut. Mauris suscipit tellus a augue luctus, vitae porta nisl facilisis. Suspendisse iaculis dapibus erat, ac tempor nisl cursus eu.',
-                contentImg: '',
+                contentTitle: 'Development Dilemmas',
+                contentCaption: 'Converse about what didn\'t work on Facebook and Twitter',
+                contentImg: 'app/resources/img/img3.jpg',
+                contentUrl: '#'
+            }, {
+                contentTitle: 'Development Dilemmas 2',
+                contentCaption: 'Converse about what didn\'t work on Facebook and Twitter',
+                contentImg: 'app/resources/img/img3.jpg',
                 contentUrl: '#'
             }
         ];

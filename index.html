@@ -10,13 +10,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-touch.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src='app/js/app.js'></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href='app/css/theme.css'>
+    <link rel="stylesheet" href='app/css/animations.css'>
 
     <!--Components-->
     <!--SearchBar-->
@@ -31,6 +33,9 @@
     <!--Carousel-->
     <script src='app/components/carousel/js/carousel.dir.js'></script>
     <link rel="stylesheet" href="app/components/carousel/css/carousel.dir.css">
+
+    <!--Brand Shift-->
+    <script src='app/components/brand-shift/js/brand-shift.dir.js'></script>
 
     <!--Icons-->
     <!--TODO Remove the icon CDN and replace with actual dl-->
@@ -54,7 +59,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><i class='sfh-logo fa fa-ravelry' aria-hidden="true"></i> <span class='sfh-name'>Students For Haiti</span></a>
+                <a class="navbar-brand" href="#"><i class='sfh-logo fa fa-ravelry brand-shift-visible' aria-hidden="true"></i> <span class='sfh-name brand-shift-hide'>Students For Haiti</span></a>
+                <!--brand-shift-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
