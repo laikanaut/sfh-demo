@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+/*Header*/
+.sfh-logo {
+    height:25px;
+}
+
 
 /*Footer*/
 
@@ -21,6 +26,10 @@ footer {
 footer .site-promo {
     text-align: center;
     margin-bottom: 25px;
+}
+
+footer .site-promo img {
+    margin-bottom:18px;
 }
 
 footer .site-promo .social-media-links {
@@ -79,6 +88,11 @@ footer .site-map a:hover {
 .navbar-default .navbar-nav > li > a:focus {
     color: #fafafa;
     background-color: #263546;
+}
+
+.btn-alert {
+    background-color:#b94134;
+    color:#fafafa;
 }
 
 @media only screen and (max-width: 766px) {

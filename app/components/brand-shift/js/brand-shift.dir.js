@@ -9,14 +9,15 @@
                 function init() {
                     var visibilityLimit = 250; //Add checking to this
                     var brandTitle = elem.find('.brand-shift-hide');
-
-                    elem.css('position', 'fixed');
-
-                    //Setting Transition for smoother movement
-
-                    //elem.css
-
-
+                    
+                    
+                    
+                    //Setting CSS Props
+                    elem.css({'position': 'fixed',
+                              'transition':'left 0.35s ease-in 0s',
+                            'left':'8px'});
+                    
+                    brandTitle.css({'transition':'opacity 0.35s ease-in 0s'});
 
 
                     $(document).on('scroll', function () {
@@ -24,32 +25,18 @@
                         //brand-shift-hide
                         var dispOpacity = 0;
                         var scrollLen = $(document).scrollTop();
-                        var scrollRatio = 0;
-                        var leftShift = 0;
-
-                        if (scrollLen < visibilityLimit) {
-                            scrollRatio = scrollLen / visibilityLimit;
-
-                            dispOpacity = 1 - scrollRatio;
-
-                            //Apply visibility
-                            brandTitle.css('opacity', dispOpacity);
-
-                            leftShift = (parseInt($(document).width(), 10)) * scrollRatio * 0.5;
-
-
-                            console.log("Doc Width: " + $(document).width());
-                            console.log("Scroll Ratio: " + scrollRatio);
-                            console.log("Left Shift: " + leftShift + " px");
-                            //Apply Spacing
-                            elem.css('left', (leftShift + 'px'));
+                        var docWidth = $(document).width();
+                        
+                        console.log(scrollLen);
+                        
+                        if(scrollLen > 0) {
+                            elem.css('left',(docWidth/2)-21);
+                            brandTitle.css('display','none');
                         } else {
-                            //Do I need this?   
+                            elem.css('left','8px');
+                            brandTitle.css('display','inline');
                         }
-
-
-                        //Apply css visibility
-
+                        
                     });
                 }
 
